@@ -1,1 +1,1 @@
-# Maratona-Discover
+# Maratona-Discover da Rocket Seat
