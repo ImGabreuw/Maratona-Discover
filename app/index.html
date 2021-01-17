@@ -7,52 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- formatação da tela para diversos dispositivos -->
     <title>Dev.finance$</title> <!-- Título da aba do navegador -->
+
+    <!-- outra forma de estilizar a página
+    <style>
+        body { 
+            (propriendades)
+            color: red;
+        }
+    </style> 
+    -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- OBS: existe de h1 até h6 -->
+    <!-- <body style="color: red;"> = uma forma de estilizar a página -->
+    <!-- TAGs estruturais/semânticas-->
+    <header>
+        <h1 id="logo">dev.finance$</h1> <!-- formatação de head (título) predefinidos pelo navagador -->
+    </header> <!-- Título -->
 
-    <h1>dev.finance$</h1> <!-- formatação de head (título) predefinidos pelo navagador -->
+    <main>
+        <section id="balance">
+            <!-- 'id' = atributo global e único/identificador-->
+            <!-- Em uma 'section' geramente começa com um 'h2' -->
 
-    <h2>Balanço</h2> <!-- formatação de head predefinidos pelo navagador -->
-    <h3>Entradas</h3> <!-- formatação de head predefinidos pelo navagador -->
-    <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
+            <h2>Balanço</h2> <!-- formatação de head predefinidos pelo navagador -->
 
-    <h3>Saídas</h3>
-    <p>R$ 2.000,00</p>
+            <div class="card">
+                <h3>Entradas</h3> <!-- formatação de head predefinidos pelo navagador -->
+                <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
+            </div>
+            <!-- 'div' = não possui significado, porém ao  colocar 'class="nome"' -> + organizado / acessibilidade -->
 
-    <h3>Total</h3>
-    <p>R$ 3.000,00</p>
+            <div class="card">
+                <h3>Saídas</h3>
+                <p>R$ 2.000,00</p>
+            </div>
 
-    <h2>Transações</h2>
+            <div class="card">
+                <h3>Total</h3>
+                <p>R$ 3.000,00</p>
+            </div>
+        </section> <!-- Seção do BALANÇO -->
 
-    <table>
-        <thead>
-            <tr>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>Data</th>
-            </tr> <!-- Table Row = linha da tabela -->
-        </thead> <!-- Table HEAD -->
-        <tbody>
-            <tr>
-                <td>Luz</td>
-                <td>- R$ 500,00</td>
-                <td>23/01/2021</td>
-            </tr>
-            <tr>
-                <td>Criação website</td>
-                <td>R$ 5.000,00</td>
-                <td>23/01/2021</td>
-            </tr>
-            <tr>
-                <td>Internet</td>
-                <td>- R$ 200,00</td>
-                <td>23/01/2021</td>
-            </tr>
-        </tbody> <!-- Table BODY -->
-    </table>
+        <section id="transaction">
+            <h2>Transações</h2>
 
-    <p>dev.finance$</p>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr> <!-- Table Row = linha da tabela -->
+                </thead> <!-- Table HEAD -->
+                <tbody>
+                    <tr>
+                        <td>Luz</td>
+                        <td>- R$ 500,00</td>
+                        <td>23/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td>Criação website</td>
+                        <td>R$ 5.000,00</td>
+                        <td>23/01/2021</td>
+                    </tr>
+                    <tr>
+                        <td>Internet</td>
+                        <td>- R$ 200,00</td>
+                        <td>23/01/2021</td>
+                    </tr>
+                </tbody> <!-- Table BODY -->
+            </table>
+        </section> <!-- Seção das TRANSAÇÕES -->
+
+    </main> <!-- Conteúdo principal -->
+
+    <footer>
+        <p>dev.finance$</p>
+    </footer> <!-- Rodapé -->
+
+    <!-- OBS: existem h1 até h6 -->
 </body>
+
 </html>
