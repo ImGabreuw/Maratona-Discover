@@ -1,6 +1,6 @@
 # Maratona-Discover da Rocket Seat
 
-![CRONOGRAMA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronogramaPNG.PNG?raw=true)
+![CRONOGRAMA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronograma.PNG)
 
 # TAREFAS
 
@@ -8,4 +8,4 @@
 
 # TAREFAS PARA ACOMPANHAR A AULA 2
 
-![TAREFA-PROXIMA-AULA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa_proxima_aula.PNG?raw=true)
+![TAREFA-PROXIMA-AULA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa_proxima_aula.PNG)
