@@ -4,7 +4,7 @@
 
 # TAREFAS
 
-![TAREFA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefaPNG.PNGraw=true)
+![TAREFA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa.PNG)
 
 # TAREFAS PARA ACOMPANHAR A AULA 2
 
