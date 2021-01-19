@@ -102,3 +102,12 @@ Sempre que iniciar um novo projeto, escreva os comandos abaixo para resetar todo
 ---
 
 <h2 align="left">Resultado da aula 1</h2>
+<div align="center">
+    <img 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/resultado-aula1.PNG" 
+        alt="Resultado da 1º aula"
+    >
+</div>
+
+<h4 align="left">Referência de anotações</h4>
+https://github.com/Auriflanos/MaratonaDiscover_Aula1
