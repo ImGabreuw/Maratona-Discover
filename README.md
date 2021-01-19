@@ -1,7 +1,15 @@
 <h1 align="center">Maratona Discover</h3>
 
 <h3 align="left">Antes da inscrição</h3>
-https://app.rocketseat.com.br/discover/courses
+Caso você seja novo nessas área, é recomendado assistir as seguintes aulas:
+<a href="https://app.rocketseat.com.br/discover/courses">
+    <img 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa.PNG" 
+        alt="Página da RocketSeat para visualizar os cursos disponíveis"
+        title="Clique aqui para visualizar os cursos"
+    >
+</a>
+
 
 <h3 align="left">Página da RocketSeat para inscrição</h3>
 <div align="center">
