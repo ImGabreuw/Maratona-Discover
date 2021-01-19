@@ -1,9 +1,5 @@
 <h1 align="center">Maratona Discover</h3>
 
-
-
-
-
 <h2 align="left">Antes da inscrição</h3>
 Caso você seja novo nessas área (como eu), é recomendado fazer os seguintes passos:
 <a href="https://app.rocketseat.com.br/discover/courses">
@@ -14,9 +10,9 @@ Caso você seja novo nessas área (como eu), é recomendado fazer os seguintes p
     >
 </a>
 
+---
 
-
-<h3 align="left">Página da RocketSeat para inscrição</h3>
+<h2 align="left">Página da RocketSeat para inscrição</h3>
 <div align="center">
     <a href="https://maratonadiscover.rocketseat.com.br/inscricao">
         <img 
