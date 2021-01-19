@@ -3,7 +3,7 @@
 <h2 align="left">Cronograma</h2>
 <div align="center">
     <img 
-        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronogramaPNG.PNG" 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/cronogramaPNG.PNG" 
         alt="Cronograma"
     >
 </div>
@@ -14,7 +14,7 @@
 Caso você seja novo nessas área (como eu), é recomendado fazer os seguintes passos:
 <a href="https://app.rocketseat.com.br/discover/courses">
     <img 
-        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa.PNG" 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/tarefa.PNG" 
         alt="Página da RocketSeat para visualizar os cursos disponíveis"
         title="Clique aqui para visualizar os cursos"
     >
