@@ -9,7 +9,7 @@ https://app.rocketseat.com.br/discover/courses
         <img 
             src="https://maratonadiscover.rocketseat.com.br/_next/image?url=%2Fimages%2FillustrationEvolve.png&w=640&q=75" 
             alt="Página da RocketSeat para inscrição" 
-            title="INSCRIÇÂO"
-            width="400px">
+            title="Clique aqui para fazer sua inscrição"
+            width="500px">
     </a>
 </div>
