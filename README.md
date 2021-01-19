@@ -1,5 +1,13 @@
 <h1 align="center">Maratona Discover</h3>
 
+<h2 align="left">Cronograma</h2>
+<img 
+    src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronogramaPNG.PNG" 
+    alt="Cronograma"
+>
+
+---
+
 <h2 align="left">Antes da inscrição</h3>
 Caso você seja novo nessas área (como eu), é recomendado fazer os seguintes passos:
 <a href="https://app.rocketseat.com.br/discover/courses">
