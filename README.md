@@ -1,11 +1,15 @@
-# Maratona-Discover da Rocket Seat
+<h1 align="center">Maratona Discover</h3>
 
-![CRONOGRAMA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronogramaPNG.PNG)
+<h3 align="left">Antes da inscrição</h3>
+https://app.rocketseat.com.br/discover/courses
 
-# TAREFAS
-
-![TAREFA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa.PNG)
-
-# TAREFAS PARA ACOMPANHAR A AULA 2
-
-![TAREFA-PROXIMA-AULA](https://github.com/ImGabreuw/Maratona-Discover/blob/master/Anotacoes/tarefa_proxima_aula.PNG)
+<h3 align="left">Página da RocketSeat para inscrição</h3>
+<div align="center">
+    <a href="https://maratonadiscover.rocketseat.com.br/inscricao">
+        <img 
+            src="https://maratonadiscover.rocketseat.com.br/_next/image?url=%2Fimages%2FillustrationEvolve.png&w=640&q=75" 
+            alt="Página da RocketSeat para inscrição" 
+            title="INSCRIÇÂO"
+            width="400px">
+    </a>
+</div>
