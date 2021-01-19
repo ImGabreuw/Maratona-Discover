@@ -1,9 +1,10 @@
 <h1 align="center">Maratona Discover</h3>
 
-<h2 align="left">Cronograma</h2>
+<h2 align="center">Cronograma</h2>
 <img 
     src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/cronograma/cronogramaPNG.PNG" 
     alt="Cronograma"
+    width="200px"
 >
 
 ---
