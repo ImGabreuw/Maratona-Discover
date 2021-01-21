@@ -18,6 +18,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Truque para enconder um caomponente, sem retirá-lo (PARA MANTER ACESSIBILIDADE) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 /* chamamento de uma classe no CSS = '. + nome_da_classe' */
 .container {
     width: min(90vw, 800px); /* limite de largura */
@@ -70,6 +83,10 @@ header {
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p {

@@ -27,7 +27,7 @@
     <!-- <body style="color: red;"> = uma forma de estilizar a página -->
     <!-- TAGs estruturais/semânticas-->
     <header>
-        <h1 id="logo">dev.finance$</h1> <!-- formatação de head (título) predefinidos pelo navagador -->
+        <img src="./assets\resources\logo.svg" alt="Logo Dev finance"> <!-- Inserção de imagem -->
     </header> <!-- Título -->
 
     <main class="container">
@@ -35,27 +35,37 @@
             <!-- 'id' = atributo global e único/identificador-->
             <!-- Em uma 'section' geramente começa com um 'h2' -->
 
-            <h2>Balanço</h2> <!-- formatação de head predefinidos pelo navagador -->
+            <h2 class="sr-only">Balanço</h2> <!-- formatação de head predefinidos pelo navagador -->
 
             <div class="card">
-                <h3>Entradas</h3> <!-- formatação de head predefinidos pelo navagador -->
+                <h3>
+                    <span>Entradas</span>
+                    <img src="./assets/resources/income.svg" alt="Imagem de entradas">
+                </h3> <!-- formatação de head predefinidos pelo navagador -->
                 <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
             </div>
             <!-- 'div' = não possui significado, porém ao  colocar 'class="nome"' -> + organizado / acessibilidade -->
 
             <div class="card">
-                <h3>Saídas</h3>
-                <p>R$ 2.000,00</p>
+                <h3>
+                    <span>Saídas</span>
+                    <img src="./assets/resources/expense.svg" alt="Imagem de saídas">
+                </h3> <!-- formatação de head predefinidos pelo navagador -->
+                <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
             </div>
 
             <div class="card total">
-                <h3>Total</h3>
+                <h3>
+                    <span>Total</span>
+                    <img src="./assets/resources/total.svg" alt="Imagem de total">
+                </h3> <!-- formatação de head predefinidos pelo navagador -->
+                <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
                 <p>R$ 3.000,00</p>
             </div>
         </section> <!-- Seção do BALANÇO -->
 
         <section id="transaction">
-            <h2>Transações</h2>
+            <h2 class="sr-only">Transações</h2>
 
             <table id="data-table">
                 <thead>
