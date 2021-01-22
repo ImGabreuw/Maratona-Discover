@@ -3,7 +3,7 @@
 <h2 align="left">Cronograma</h2>
 <div align="center">
     <img 
-        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/cronogramaPNG.PNG" 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/prints/cronogramaPNG.PNG" 
         alt="Cronograma"
     >
 </div>
@@ -14,7 +14,7 @@
 Caso você seja novo nessas área (como eu), é recomendado fazer os seguintes passos:
 <a href="https://app.rocketseat.com.br/discover/courses">
     <img 
-        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/tarefa.PNG" 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/prints/tarefa.PNG" 
         alt="Página da RocketSeat para visualizar os cursos disponíveis"
         title="Clique aqui para visualizar os cursos"
     >
@@ -104,7 +104,7 @@ Sempre que iniciar um novo projeto, escreva os comandos abaixo para resetar todo
 <h2 align="left">Resultado da aula 1</h2>
 <div align="center">
     <img 
-        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/resultado-aula1.PNG" 
+        src="https://github.com/ImGabreuw/Maratona-Discover/blob/master/assets/prints/resultado-aula1.PNG" 
         alt="Resultado da 1º aula"
     >
 </div>
