@@ -4,13 +4,17 @@
 
 /* Seletor universal = seleciona todas as TAGs presente no CSS */
 :root { /* referência ao documento inteiro*/
-    --dark-blue: 363f5f; /* declaração de uma variável */
+    --dark-blue: #363f5f; /* declaração de uma variável */
 }
 
 * {
     margin: 0; /* espaçamento entre os elementos */
     padding: 0; /* espaçamento entre a conteúdo e a borda da 'caixa'*/
     box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; /* 100% = 16px , portanto 93.75% = 15px */
 }
 
 body {
@@ -46,16 +50,30 @@ h2 {
     font-weight: normal; /* normal = 400 */
 }
 
+/* Links & Buttons =========== */
+a {
+    color: #49AA26;
+    text-decoration: nome; /* retirar o underline */
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
 /* HEADER =========== */
 header {
     background: #2D4A22;
-    padding: 2rem 0; /* espaçamento ao redor de todo o contúdo */
+    padding: 2rem 0 10rem; /* espaçamento ao redor de todo o contúdo */
     text-align: center; /* alinhamento central */
 }
 
 #logo {
     color: #fff;
-    padding: 2rem 0 10rem;
     font-weight: 100; /* grossura da fonte */
 }
 
@@ -102,6 +120,11 @@ header {
 }
 
 /* Table =========== */
+#transaction {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
 #data-table {
     width: 100%; /* ocupar todo o espaço do container onde a 'data-table' está */
     border-spacing: 0 0.5rem;
@@ -111,6 +134,11 @@ header {
 table thead tr th:first-child, 
 table tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child, 
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 table thead th {
@@ -148,6 +176,34 @@ td.expense {
     color: #e92929;
 }
 
+/* Modal =========== */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #F0F2f5;
+    padding: 2.4rem;
+}
+
 /* Footer =========== */
 footer {
     text-align: center;
@@ -157,8 +213,20 @@ footer {
     opacity: 0.6;
 }
 
-/* Todos 'h1' no index.html terá a cor VERMELHA
-h1 {
-    color: red;
-}
+/* Responsive =========== */
+/* at-rules:
+   - toda palavra acompanhada de @. (EXEMPLO = @media) 
+   - 'min-width: 800px' = tudo que estiver dentro dos () será a regra a ser seguida caso
+     o conteúdo dentro dos () sejá verdadeiro.
 */
+@media(min-width: 800px) {
+    html {
+        font-size: 87.5%; /* 87.5% = 14px */
+    }
+
+    #balance {
+        display: grid; /* todo GRID precisa de uma template */
+        grid-template-columns: repeat(3, 1fr); /* repeat(3, 1fr) = 1fr 1fr 1fr */
+        gap: 2rem; /* espaço entre as colonas */
+    }
+}
