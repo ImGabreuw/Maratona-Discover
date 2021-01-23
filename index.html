@@ -66,7 +66,9 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#"
+            onclick="Modal.open()" 
+            class="button new">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -108,12 +110,12 @@
 
     </main> <!-- Conteúdo principal -->
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay">
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
                 <form action="">
-                    <div class="input-grup">
+                    <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
                         <input 
                             type="text" 
@@ -123,14 +125,35 @@
                         />
                     </div>
 
-                    <div class="input-grup">
-                        <label class="sr-only" for="description">Descrição</label>
+                    <div class="input-group">
+                        <label class="sr-only" for="amount">Valor</label>
                         <input 
                             type="number" 
+                            step="0.01"
                             id="amount" 
                             name="amount"
-                            placeholder="Descrição"
+                            placeholder="0,00"
                         />
+                        <small class="help">
+                            Use o sinal '-' (negativo) para despesas e 
+                            ',' (vírgula para casas decimais)
+                        </small> <!-- Tag para deixar um texto por padrão, menor -->
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input 
+                            type="date" 
+                            id="date" 
+                            name="date"
+                        />
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" 
+                        onclick="Modal.close()"
+                        class="button cancel">Cancelar</a>
+                        <button>Salvar</button>
                     </div>
                 </form>
             </div>
@@ -140,6 +163,24 @@
     <footer>
         <p>dev.finance$</p>
     </footer> <!-- Rodapé -->
+
+    <script>
+        //OBS: 'const' = objeto não vai alterado no resto da aplicação
+        const Modal = { // Criação de um objeto
+            open() { // Criação de uma função
+                document
+                    .querySelector('.modal-overlay') //Busca por todo o documento HTML pela classe = '.model-overlay'
+                    .classList
+                    .add('active') //Adição do elemento 'active' na classe 
+            },
+            close() {
+                document
+                    .querySelector('.modal-overlay') //Busca por todo o documento HTML pela classe = '.model-overlay'
+                    .classList
+                    .remove('active') //Remoção do elemento 'active' na classe 
+            }
+        } 
+    </script> <!-- Tag script = sempre fica no final do body (CÓDIGOS JavaScript) -->
 
     <!-- OBS: existem h1 até h6 -->
 </body>
