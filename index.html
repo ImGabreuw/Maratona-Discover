@@ -27,7 +27,7 @@
     <!-- <body style="color: red;"> = uma forma de estilizar a página -->
     <!-- TAGs estruturais/semânticas-->
     <header>
-        <img src="./assets\resources\logo.svg" alt="Logo Dev finance"> <!-- Inserção de imagem -->
+        <img src="./resources/logo.svg" alt="Logo Dev finance"> <!-- Inserção de imagem -->
     </header> <!-- Título -->
 
     <main class="container">
@@ -40,35 +40,33 @@
             <div class="card">
                 <h3>
                     <span>Entradas</span>
-                    <img src="./assets/resources/income.svg" alt="Imagem de entradas">
+                    <img src="./resources/income.svg" alt="Imagem de entradas">
                 </h3> <!-- formatação de head predefinidos pelo navagador -->
-                <p>R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
+                <p id="incomeDisplay">R$ 5.000,00</p> <!-- Paragraph (parágrafo) -->
             </div>
             <!-- 'div' = não possui significado, porém ao  colocar 'class="nome"' -> + organizado / acessibilidade -->
 
             <div class="card">
                 <h3>
                     <span>Saídas</span>
-                    <img src="./assets/resources/expense.svg" alt="Imagem de saídas">
+                    <img src="./resources/expense.svg" alt="Imagem de saídas">
                 </h3> <!-- formatação de head predefinidos pelo navagador -->
-                <p>R$ 2.000,00</p> <!-- Paragraph (parágrafo) -->
+                <p id="expenseDisplay">R$ 2.000,00</p> <!-- Paragraph (parágrafo) -->
             </div>
 
             <div class="card total">
                 <h3>
                     <span>Total</span>
-                    <img src="./assets/resources/total.svg" alt="Imagem de total">
+                    <img src="./resources/total.svg" alt="Imagem de total">
                 </h3> <!-- formatação de head predefinidos pelo navagador -->
-                <p>R$ 3.000,00</p> <!-- Paragraph (parágrafo) -->
+                <p id="totalDisplay">R$ 3.000,00</p> <!-- Paragraph (parágrafo) -->
             </div>
         </section> <!-- Seção do BALANÇO -->
 
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#"
-            onclick="Modal.open()" 
-            class="button new">+ Nova Transação</a>
+            <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -80,30 +78,6 @@
                     </tr> <!-- Table Row = linha da tabela -->
                 </thead> <!-- Table HEAD -->
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./assets/resources/minus.svg" alt="Remover transação">
-                        </td> <!-- Table Data -->
-                    </tr>
-                    <tr>
-                        <td class="description">Criação website</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./assets/resources/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./assets/resources/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
                 </tbody> <!-- Table BODY -->
             </table>
         </section> <!-- Seção das TRANSAÇÕES -->
@@ -114,45 +88,28 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
-                        <input 
-                            type="text" 
-                            id="description" 
-                            name="description"
-                            placeholder="Descrição"
-                        />
+                        <input type="text" id="description" name="description" placeholder="Descrição" />
                     </div>
 
                     <div class="input-group">
                         <label class="sr-only" for="amount">Valor</label>
-                        <input 
-                            type="number" 
-                            step="0.01"
-                            id="amount" 
-                            name="amount"
-                            placeholder="0,00"
-                        />
+                        <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00" />
                         <small class="help">
-                            Use o sinal '-' (negativo) para despesas e 
+                            Use o sinal '-' (negativo) para despesas e
                             ',' (vírgula para casas decimais)
                         </small> <!-- Tag para deixar um texto por padrão, menor -->
                     </div>
 
                     <div class="input-group">
                         <label class="sr-only" for="date">Data</label>
-                        <input 
-                            type="date" 
-                            id="date" 
-                            name="date"
-                        />
+                        <input type="date" id="date" name="date" />
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" 
-                        onclick="Modal.close()"
-                        class="button cancel">Cancelar</a>
+                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 </form>
@@ -164,23 +121,8 @@
         <p>dev.finance$</p>
     </footer> <!-- Rodapé -->
 
-    <script>
-        //OBS: 'const' = objeto não vai alterado no resto da aplicação
-        const Modal = { // Criação de um objeto
-            open() { // Criação de uma função
-                document
-                    .querySelector('.modal-overlay') //Busca por todo o documento HTML pela classe = '.model-overlay'
-                    .classList
-                    .add('active') //Adição do elemento 'active' na classe 
-            },
-            close() {
-                document
-                    .querySelector('.modal-overlay') //Busca por todo o documento HTML pela classe = '.model-overlay'
-                    .classList
-                    .remove('active') //Remoção do elemento 'active' na classe 
-            }
-        } 
-    </script> <!-- Tag script = sempre fica no final do body (CÓDIGOS JavaScript) -->
+    <!-- Tag script = sempre fica no final do body (CÓDIGOS JavaScript) -->
+    <script src="./scripts.js"></script>
 
     <!-- OBS: existem h1 até h6 -->
 </body>
