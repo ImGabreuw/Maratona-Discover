@@ -8,14 +8,16 @@ Maratona Discover é uma aplicação front-end web construída durante a 1ª edi
 A aplicação consiste em um gerenciador de finâncias, ou seja, ele é possível adicionar os seus ganhos e gastos e automaticamente é calculado o balanço atual.
 
 ## Layout web
-![IMG 1]()
+![IMG 1](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/web-1.PNG)
 
-![IMG 2]()
-
-![IMG 3]()
+![IMG 2](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/web-2.PNG)
 
 # Design no Figma
-[Design Figma](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover?node-id=0%3A1)
+[MODELO](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover?node-id=0%3A1)
+
+![INICIO](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/inicio-figma.PNG)
+
+![MODAL](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/modal-figma.PNG)
 
 # Tecnologias utilizadas
 ## Front end
@@ -39,4 +41,4 @@ yarn start
 # Autor
 
 ImGabreuw (ImGabreuw)
-[LINKEDIN](https://www.linkedin.com/in/gabriel-geronazzo-981382203/)
+https://www.linkedin.com/in/gabriel-geronazzo-981382203/
