@@ -1,13 +1,15 @@
+
 /* IMPORTANTE: especificidade/cascata do CSS -> DEVEM SER RESPEITADAS */
 
 /* GLOBAl =========== */
 
 /* Seletor universal = seleciona todas as TAGs presente no CSS */
-:root { /* referência ao documento inteiro*/
-    --dark-blue: #363f5f; /* declaração de uma variável */
+:root {
+    --dark-blue: #363f5f;
     --green: #49AA26;
     --light-green: #3dd705;
     --red: #e92929;
+
 }
 
 * {
@@ -22,7 +24,7 @@ html {
 
 body {
     background: #f0f2f5;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif
 }
 
 /* Truque para enconder um caomponente, sem retirá-lo (PARA MANTER ACESSIBILIDADE) */
@@ -44,22 +46,23 @@ body {
     margin: auto; /* auto = balanceamento das margens (horizontal) */
 }
 
-/* Titles =========== */
+/* Titles ===================== */
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
     color: var(--dark-blue);
+
     font-weight: normal; /* normal = 400 */
 }
 
-/* Links & Buttons =========== */
+/* Links & Buttons ===================== */
 a {
     color: var(--green);
-    text-decoration: nome; /* retirar o underline */
+    text-decoration: none; /* retirar o underline */
 }
 
 a:hover {
-    color: var(--green);
+    color: var(--light-green);
 }
 
 button {
@@ -67,12 +70,13 @@ button {
     height: 50px;
 
     border: none;
-    border-radius: 0.25rem;
 
     color: white;
     background: var(--green);
 
     padding: 0;
+
+    border-radius: 0.25rem;
 
     cursor: pointer;
 }
@@ -89,7 +93,7 @@ button:hover {
 .button.cancel {
     color: var(--red);
     border: 2px var(--red) solid;
-    border-radius: 0.25;
+    border-radius: 0.25rem;
 
     height: 50px;
 
@@ -104,7 +108,7 @@ button:hover {
     opacity: 1;
 }
 
-/* HEADER =========== */
+/* Header ===================== */
 header {
     background: #2D4A22;
     padding: 2rem 0 10rem; /* espaçamento ao redor de todo o contúdo */
@@ -116,17 +120,17 @@ header {
     font-weight: 100; /* grossura da fonte */
 }
 
-/* Balance =========== */
+/* Balance ===================== */
 #balance {
     margin-top: -8rem;
 }
 
 #balance h2 {
-    color: white;
-    margin-top: 0;
+    color:white;
+    margin-top:0;
 }
 
-/* Cards =========== */
+/* Cards ===================== */
 .card {
     background: white;
     padding: 1.5rem 2rem;
@@ -158,7 +162,7 @@ header {
     color: white;
 }
 
-/* Table =========== */
+/* Table ===================== */
 #transaction {
     display: block;
     width: 100%;
@@ -171,12 +175,13 @@ header {
 }
 
 table thead tr th:first-child, 
-table tbody tr td:first-child {
+table tbody tr td:first-child
+{
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
 table thead tr th:last-child, 
-table tbody tr td:last-child {
+table tbody tr td:last-child{
     border-radius: 0 0.25rem 0.25rem 0;
 }
 
@@ -190,17 +195,16 @@ table thead th {
 }
 
 table tbody tr {
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 table tbody tr:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 table tbody td {
-    background: white;
-
-    padding:  1rem 2rem;
+    background:white;
+    padding: 1rem 2rem;
 }
 
 td.description {
@@ -212,20 +216,20 @@ td.income {
 }
 
 td.expense {
-    color: var(--red);
+    color: #e92929;
 }
 
-/* Modal =========== */
+/* Modal ===================== */
 .modal-overlay {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0,0,0,0.7);
 
     position: fixed;
     top: 0;
 
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
 
@@ -248,7 +252,8 @@ td.expense {
     z-index: 1;
 }
 
-/* Form =========== */
+
+/* Form ===================== */
 #form {
     max-width: 500px;
 }
@@ -270,7 +275,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help{
     opacity: 0.4;
 }
 
@@ -283,9 +288,10 @@ input {
 .input-group.actions .button,
 .input-group.actions button {
     width: 48%;
-},
+}
 
-/* Footer =========== */
+
+/* Footer ===================== */
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
@@ -294,15 +300,16 @@ footer {
     opacity: 0.6;
 }
 
+
 /* Responsive =========== */
 /* at-rules:
    - toda palavra acompanhada de @. (EXEMPLO = @media) 
    - 'min-width: 800px' = tudo que estiver dentro dos () será a regra a ser seguida caso
      o conteúdo dentro dos () sejá verdadeiro.
 */
-@media(min-width: 800px) {
+@media (min-width: 800px) {
     html {
-        font-size: 87.5%; /* 87.5% = 14px */
+        font-size: 87.5%;
     }
 
     #balance {
