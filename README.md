@@ -13,11 +13,9 @@ A aplicação consiste em um gerenciador de finâncias, ou seja, ele é possíve
 ![IMG 2](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/web-2.PNG)
 
 # Design no Figma
-[MODELO](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover?node-id=0%3A1)
+[![INICIO](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/inicio-figma.PNG)](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover?node-id=0%3A1)
 
-![INICIO](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/inicio-figma.PNG)
-
-![MODAL](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/modal-figma.PNG)
+[![MODAL](https://github.com/ImGabreuw/Maratona-Discover/blob/master/.github/assets/modal-figma.PNG)](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover?node-id=0%3A1)
 
 # Tecnologias utilizadas
 ## Front end
@@ -40,5 +38,4 @@ yarn start
 
 # Autor
 
-ImGabreuw (ImGabreuw)
-https://www.linkedin.com/in/gabriel-geronazzo-981382203/
+ImGabreuw (Discord: Gabreuw__#9336)
